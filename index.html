@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRDev Studio – Criação Digital para seu Negócio</title>
+  <meta name="description" content="Criação de sites NuvemShop, identidade visual, banners, edição de vídeo e imagens com IA. Transforme seu negócio com design profissional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="lang-pt">
+  <script>if(localStorage.getItem('brdev-dark')==='true')document.body.classList.add('dark');</script>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="logo-br">BR</span><span class="logo-dev">Dev</span><span class="logo-studio">Studio</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#services"><span class="pt-only">Serviços</span><span class="en-only">Services</span></a>
+        <a href="#portfolio"><span class="pt-only">Portfólio</span><span class="en-only">Portfolio</span></a>
+        <a href="#videos"><span class="pt-only">Vídeos</span><span class="en-only">Videos</span></a>
+        <a href="#about"><span class="pt-only">Sobre</span><span class="en-only">About</span></a>
+        <a href="#contact" class="nav__cta"><span class="pt-only">Fale Comigo</span><span class="en-only">Contact Me</span></a>
+      </nav>
+      <div class="nav__controls">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="pt-only">EN</span><span class="en-only">PT</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun"  viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="pt-only">✦ Design · Vídeo · IA</span>
+        <span class="en-only">✦ Design · Video · AI</span>
+      </div>
+      <h1 class="hero__title">
+        <span class="pt-only">Seu negócio merece</span>
+        <span class="en-only">Your business deserves</span><br />
+        <span class="gradient-text typed-text" id="typedText"></span>
+      </h1>
+      <p class="hero__sub">
+        <span class="pt-only">Criação de lojas NuvemShop, identidade visual completa, banners,<br class="d-none-sm" />
+        edição de vídeos e imagens com IA. Do zero ao profissional.</span>
+        <span class="en-only">NuvemShop stores, full visual identity, banners,<br class="d-none-sm" />
+        video editing and AI-generated images. From scratch to professional.</span>
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">
+          <span class="pt-only">Quero um orçamento</span>
+          <span class="en-only">Get a quote</span>
+        </a>
+        <a href="#portfolio" class="btn btn--ghost">
+          <span class="pt-only">Ver portfólio</span>
+          <span class="en-only">View portfolio</span>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <strong>50+</strong>
+          <span><span class="pt-only">Projetos entregues</span><span class="en-only">Projects delivered</span></span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <strong>100%</strong>
+          <span><span class="pt-only">Clientes satisfeitos</span><span class="en-only">Happy clients</span></span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <strong>24h</strong>
+          <span><span class="pt-only">Resposta rápida</span><span class="en-only">Fast response</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll"><div class="scroll-dot"></div></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag"><span class="pt-only">O que eu faço</span><span class="en-only">What I do</span></span>
+        <h2>
+          <span class="pt-only">Serviços <span class="gradient-text">completos</span> para sua presença digital</span>
+          <span class="en-only">Complete <span class="gradient-text">services</span> for your digital presence</span>
+        </h2>
+        <p>
+          <span class="pt-only">Tudo que você precisa para destacar seu negócio online, em um só lugar.</span>
+          <span class="en-only">Everything you need to stand out online, all in one place.</span>
+        </p>
+      </div>
+      <div class="services__grid">
+
+        <!-- NuvemShop -->
+        <div class="service-card service-card--featured reveal">
+          <span class="service-card__tag"><span class="pt-only">Mais pedido</span><span class="en-only">Top service</span></span>
+          <div class="service-card__icon">🛍️</div>
+          <h3><span class="pt-only">Loja NuvemShop</span><span class="en-only">NuvemShop Store</span></h3>
+          <p>
+            <span class="pt-only">Criação e personalização completa da sua loja virtual na NuvemShop. Layout profissional, responsivo e pronto para vender.</span>
+            <span class="en-only">Full creation and customization of your NuvemShop store. Professional, responsive layout ready to sell.</span>
+          </p>
+          <ul class="service-card__list">
+            <li><span class="pt-only">Configuração completa da loja</span><span class="en-only">Full store setup</span></li>
+            <li><span class="pt-only">Personalização de tema e layout</span><span class="en-only">Theme and layout customization</span></li>
+            <li><span class="pt-only">Banners e imagens dos produtos</span><span class="en-only">Banners and product images</span></li>
+            <li><span class="pt-only">Meios de pagamento integrados e configurados</span><span class="en-only">Payment methods integrated and configured</span></li>
+            <li><span class="pt-only">Suporte no cadastro inicial dos seus produtos</span><span class="en-only">Guidance on registering your first products</span></li>
+            <li><span class="pt-only">SEO básico incluso</span><span class="en-only">Basic SEO included</span></li>
+          </ul>
+          <div class="service-card__highlight">
+            <span class="highlight-icon">🤖</span>
+            <span class="pt-only">Sem modelo de produto para vídeo? <strong>Crio com IA</strong> para você!</span>
+            <span class="en-only">No product model for video? <strong>I create it with AI</strong> for you!</span>
+          </div>
+        </div>
+
+        <!-- Sites -->
+        <div class="service-card reveal">
+          <div class="service-card__icon">🌐</div>
+          <h3><span class="pt-only">Sites & Landing Pages</span><span class="en-only">Websites & Landing Pages</span></h3>
+          <p>
+            <span class="pt-only">Sites institucionais, portfólios e landing pages desenvolvidos com HTML, CSS, JavaScript, React e Next.js. Presença online profissional para o seu negócio.</span>
+            <span class="en-only">Institutional sites, portfolios and landing pages built with HTML, CSS, JavaScript, React and Next.js. Professional online presence for your business.</span>
+          </p>
+          <ul class="service-card__list">
+            <li><span class="pt-only">Sites institucionais</span><span class="en-only">Institutional websites</span></li>
+            <li><span class="pt-only">Landing pages de conversão</span><span class="en-only">Conversion landing pages</span></li>
+            <li><span class="pt-only">Portfólios online</span><span class="en-only">Online portfolios</span></li>
+            <li><span class="pt-only">HTML, CSS & JS</span><span class="en-only">HTML, CSS & JS</span></li>
+          </ul>
+          <a href="https://github.com/brdesenvolvimentos" target="_blank" rel="noopener" class="github-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span class="pt-only">Ver projetos no GitHub</span>
+            <span class="en-only">View projects on GitHub</span>
+          </a>
+        </div>
+
+        <!-- Identidade Visual -->
+        <div class="service-card reveal">
+          <div class="service-card__icon">🎨</div>
+          <h3><span class="pt-only">Identidade Visual</span><span class="en-only">Visual Identity</span></h3>
+          <p>
+            <span class="pt-only">Logo profissional + manual de marca. Cores, tipografia e elementos visuais que representam o DNA do seu negócio.</span>
+            <span class="en-only">Professional logo + brand guidelines. Colors, typography and visual elements that represent your business DNA.</span>
+          </p>
+          <ul class="service-card__list">
+            <li><span class="pt-only">Criação de logotipo</span><span class="en-only">Logo creation</span></li>
+            <li><span class="pt-only">Paleta de cores</span><span class="en-only">Color palette</span></li>
+            <li><span class="pt-only">Tipografia da marca</span><span class="en-only">Brand typography</span></li>
+            <li><span class="pt-only">Arquivos editáveis</span><span class="en-only">Editable files</span></li>
+          </ul>
+        </div>
+
+        <!-- Banners -->
+        <div class="service-card reveal">
+          <div class="service-card__icon">📱</div>
+          <h3><span class="pt-only">Banners & Redes Sociais</span><span class="en-only">Banners & Social Media</span></h3>
+          <p>
+            <span class="pt-only">Artes para Instagram, Facebook, WhatsApp e mais. Posts, stories, capas e banners com a identidade da sua marca.</span>
+            <span class="en-only">Artwork for Instagram, Facebook, WhatsApp and more. Posts, stories, covers and banners with your brand identity.</span>
+          </p>
+          <ul class="service-card__list">
+            <li><span class="pt-only">Posts para feed</span><span class="en-only">Feed posts</span></li>
+            <li><span class="pt-only">Stories animados</span><span class="en-only">Animated stories</span></li>
+            <li><span class="pt-only">Capas de perfil</span><span class="en-only">Profile covers</span></li>
+            <li><span class="pt-only">Banners promocionais</span><span class="en-only">Promotional banners</span></li>
+          </ul>
+        </div>
+
+        <!-- Vídeo -->
+        <div class="service-card reveal">
+          <div class="service-card__icon">🎬</div>
+          <h3><span class="pt-only">Edição de Vídeo</span><span class="en-only">Video Editing</span></h3>
+          <p>
+            <span class="pt-only">Do Reel de 30 segundos ao vídeo completo para YouTube — edição profissional com cortes precisos, legendas, efeitos sonoros e trilha. Conteúdo que engaja e converte em qualquer formato.</span>
+            <span class="en-only">From a 30-second Reel to a full-length YouTube video — professional editing with precise cuts, captions, sound effects and music. Content that engages and converts in any format.</span>
+          </p>
+          <ul class="service-card__list">
+            <li><span class="pt-only">Reels, TikToks e vídeos longos</span><span class="en-only">Reels, TikToks and long-form videos</span></li>
+            <li><span class="pt-only">Legendas sincronizadas</span><span class="en-only">Synced captions</span></li>
+            <li><span class="pt-only">Efeitos, transições e trilha</span><span class="en-only">Effects, transitions and music</span></li>
+            <li><span class="pt-only">Edição no DaVinci Resolve</span><span class="en-only">Editing in DaVinci Resolve</span></li>
+          </ul>
+        </div>
+
+        <!-- IA + Photoshop -->
+        <div class="service-card reveal">
+          <div class="service-card__icon">🤖</div>
+          <h3><span class="pt-only">Imagens com IA + Photoshop</span><span class="en-only">AI + Photoshop Images</span></h3>
+          <p>
+            <span class="pt-only">Geração de imagens criativas com IA + tratamento profissional no Photoshop. Fotos de produto sem fotógrafo.</span>
+            <span class="en-only">Creative image generation with AI + professional retouching in Photoshop. Product photos without a photographer.</span>
+          </p>
+          <ul class="service-card__list">
+            <li><span class="pt-only">Geração com IA</span><span class="en-only">AI generation</span></li>
+            <li><span class="pt-only">Retoque no Photoshop</span><span class="en-only">Photoshop retouching</span></li>
+            <li><span class="pt-only">Fundo removido/trocado</span><span class="en-only">Background removed/replaced</span></li>
+            <li><span class="pt-only">Uso comercial liberado</span><span class="en-only">Commercial use allowed</span></li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="service-card service-card--cta reveal">
+          <div class="service-card__icon">💬</div>
+          <h3><span class="pt-only">Não achou o que precisa?</span><span class="en-only">Didn't find what you need?</span></h3>
+          <p>
+            <span class="pt-only">Me chama! Provavelmente posso te ajudar com projetos personalizados ou pacotes combinados com desconto.</span>
+            <span class="en-only">Hit me up! I can probably help with custom projects or bundled packages with a discount.</span>
+          </p>
+          <a href="https://wa.me/5519993598381" class="btn btn--primary" style="margin-top:1.5rem;width:100%;justify-content:center;" target="_blank" rel="noopener">
+            <span class="pt-only">Falar no WhatsApp</span>
+            <span class="en-only">Message on WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag"><span class="pt-only">Trabalhos</span><span class="en-only">Work</span></span>
+        <h2>
+          <span class="pt-only">Portfólio <span class="gradient-text">em destaque</span></span>
+          <span class="en-only">Featured <span class="gradient-text">portfolio</span></span>
+        </h2>
+        <p>
+          <span class="pt-only">Alguns dos projetos que já entreguei. Cada um com dedicação e atenção aos detalhes.</span>
+          <span class="en-only">Some of the projects I've delivered. Each one with care and attention to detail.</span>
+        </p>
+      </div>
+
+      <!-- LIVE SITES -->
+      <div class="live-sites reveal">
+        <div class="live-sites__header">
+          <span class="live-badge"><span class="live-dot"></span><span class="pt-only">Lojas ao vivo</span><span class="en-only">Live stores</span></span>
+          <p><span class="pt-only">Clique para visitar</span><span class="en-only">Click to visit</span></p>
+        </div>
+        <div class="live-sites__grid">
+
+          <a href="https://floraricci.lojavirtualnuvem.com.br/" target="_blank" rel="noopener" class="browser-card">
+            <div class="browser-card__chrome">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-card__url">floraricci.lojavirtualnuvem.com.br</div>
+              <span class="browser-visit"><span class="pt-only">Visitar ↗</span><span class="en-only">Visit ↗</span></span>
+            </div>
+            <div class="browser-card__preview" style="--c1:#9c27b0;--c2:#e91e8c">
+              <span class="browser-card__emoji">👗</span>
+              <div class="browser-card__label">
+                <strong>Flora Ricci</strong>
+                <span><span class="pt-only">Moda feminina · NuvemShop</span><span class="en-only">Women's fashion · NuvemShop</span></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://buenopresentes.com" target="_blank" rel="noopener" class="browser-card">
+            <div class="browser-card__chrome">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-card__url">buenopresentes.com</div>
+              <span class="browser-visit"><span class="pt-only">Visitar ↗</span><span class="en-only">Visit ↗</span></span>
+            </div>
+            <div class="browser-card__preview" style="--c1:#f59e0b;--c2:#ef4444">
+              <span class="browser-card__emoji">🎁</span>
+              <div class="browser-card__label">
+                <strong>Bueno Presentes</strong>
+                <span><span class="pt-only">Loja de presentes e variedades · NuvemShop</span><span class="en-only">Gifts & variety store · NuvemShop</span></span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- PORTFOLIO GRID -->
+      <div class="portfolio__filters">
+        <button class="filter-btn active" data-filter="all"><span class="pt-only">Todos</span><span class="en-only">All</span></button>
+        <button class="filter-btn" data-filter="nuvemshop">NuvemShop</button>
+        <button class="filter-btn" data-filter="logo"><span class="pt-only">Logo</span><span class="en-only">Logo</span></button>
+        <button class="filter-btn" data-filter="banner"><span class="pt-only">Banners</span><span class="en-only">Banners</span></button>
+        <button class="filter-btn" data-filter="video"><span class="pt-only">Vídeo</span><span class="en-only">Video</span></button>
+        <button class="filter-btn" data-filter="site"><span class="pt-only">Sites</span><span class="en-only">Sites</span></button>
+      </div>
+      <div class="portfolio__grid" id="portfolioGrid">
+
+        <div class="portfolio-item reveal" data-category="nuvemshop">
+          <div class="portfolio-item__img">
+            <div class="portfolio-placeholder" style="--c1:#6c63ff;--c2:#a78bfa">
+              <span>🛍️</span><p><span class="pt-only">Loja de Moda</span><span class="en-only">Fashion Store</span></p>
+            </div>
+          </div>
+          <div class="portfolio-item__info">
+            <span class="portfolio-item__cat">NuvemShop</span>
+            <h4><span class="pt-only">Flora Ricci — Moda Feminina</span><span class="en-only">Flora Ricci — Women's Fashion</span></h4>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="logo">
+          <div class="portfolio-item__img">
+            <div class="portfolio-placeholder" style="--c1:#f59e0b;--c2:#fb923c">
+              <span>🎨</span><p><span class="pt-only">Identidade Visual</span><span class="en-only">Visual Identity</span></p>
+            </div>
+          </div>
+          <div class="portfolio-item__info">
+            <span class="portfolio-item__cat"><span class="pt-only">Logo</span><span class="en-only">Logo</span></span>
+            <h4><span class="pt-only">Marca para Pet Shop</span><span class="en-only">Pet Shop Brand</span></h4>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="banner">
+          <div class="portfolio-item__img">
+            <div class="portfolio-placeholder" style="--c1:#10b981;--c2:#06b6d4">
+              <span>📱</span><p><span class="pt-only">Pack de Posts</span><span class="en-only">Post Pack</span></p>
+            </div>
+          </div>
+          <div class="portfolio-item__info">
+            <span class="portfolio-item__cat"><span class="pt-only">Banners</span><span class="en-only">Banners</span></span>
+            <h4><span class="pt-only">Pack 30 Posts Instagram</span><span class="en-only">30 Instagram Posts Pack</span></h4>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="video">
+          <div class="portfolio-item__img">
+            <div class="portfolio-placeholder" style="--c1:#ec4899;--c2:#f43f5e">
+              <span>🎬</span><p>Reels</p>
+            </div>
+          </div>
+          <div class="portfolio-item__info">
+            <span class="portfolio-item__cat"><span class="pt-only">Vídeo</span><span class="en-only">Video</span></span>
+            <h4><span class="pt-only">Reels para E-commerce</span><span class="en-only">Reels for E-commerce</span></h4>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="site">
+          <div class="portfolio-item__img">
+            <div class="portfolio-placeholder" style="--c1:#0ea5e9;--c2:#06b6d4">
+              <span>🌐</span><p><span class="pt-only">Landing Page</span><span class="en-only">Landing Page</span></p>
+            </div>
+          </div>
+          <div class="portfolio-item__info">
+            <span class="portfolio-item__cat"><span class="pt-only">Site</span><span class="en-only">Website</span></span>
+            <h4><span class="pt-only">Landing Page de Serviços</span><span class="en-only">Services Landing Page</span></h4>
+          </div>
+        </div>
+
+        <div class="portfolio-item reveal" data-category="logo">
+          <div class="portfolio-item__img">
+            <div class="portfolio-placeholder" style="--c1:#6366f1;--c2:#8b5cf6">
+              <span>✨</span><p>IA + Photoshop</p>
+            </div>
+          </div>
+          <div class="portfolio-item__info">
+            <span class="portfolio-item__cat">IA + Photoshop</span>
+            <h4><span class="pt-only">Fotos de Produto com IA</span><span class="en-only">AI Product Photos</span></h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="videos-section" id="videos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag"><span class="pt-only">Veja meu trabalho</span><span class="en-only">See my work</span></span>
+        <h2>
+          <span class="pt-only"><span class="gradient-text">Vídeos</span> dos projetos</span>
+          <span class="en-only">Project <span class="gradient-text">videos</span></span>
+        </h2>
+        <p>
+          <span class="pt-only">Exemplos reais de edições, lojas e artes que já entreguei.</span>
+          <span class="en-only">Real examples of edits, stores and artwork I've delivered.</span>
+        </p>
+      </div>
+      <div class="videos-grid">
+
+        <!-- Vídeo 1 — NuvemShop (vertical/mobile) -->
+        <div class="video-card video-card--portrait reveal">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/bzQN9rzZHTA"
+              title="Criação de loja NuvemShop"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-card__info">
+            <span class="portfolio-item__cat">NuvemShop</span>
+            <h4><span class="pt-only">Criação de loja NuvemShop — do zero ao pronto</span><span class="en-only">NuvemShop store creation — from scratch</span></h4>
+          </div>
+        </div>
+
+        <!-- Vídeo 2 — Shorts (vertical/mobile) -->
+        <div class="video-card video-card--portrait reveal">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/G8d_LSREYfk"
+              title="Shorts — Vídeo para jogo online"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-card__info">
+            <span class="portfolio-item__cat">Shorts</span>
+            <h4><span class="pt-only">Vídeo curto — conteúdo para jogo online</span><span class="en-only">Short video — online game content</span></h4>
+          </div>
+        </div>
+
+        <!-- Vídeo 3 — Demonstrativo Reels (horizontal/PC) -->
+        <div class="video-card video-card--landscape reveal">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/Mm8Gt80V-Co"
+              title="Demonstrativo de Reels — Flora Ricci"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-card__info">
+            <span class="portfolio-item__cat"><span class="pt-only">Edição de Vídeo</span><span class="en-only">Video Editing</span></span>
+            <h4><span class="pt-only">Demonstrativo de Reels — Flora Ricci (Instagram)</span><span class="en-only">Reels showcase — Flora Ricci (Instagram)</span></h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__visual reveal">
+          <div class="about__avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-placeholder"><span>BR</span></div>
+          </div>
+          <div class="about__tools">
+            <div class="tool-badge">Photoshop</div>
+            <div class="tool-badge">CorelDRAW</div>
+            <div class="tool-badge">Canva</div>
+            <div class="tool-badge">DaVinci Resolve</div>
+            <div class="tool-badge">CapCut</div>
+            <div class="tool-badge">NuvemShop</div>
+            <div class="tool-badge">HTML/CSS</div>
+            <div class="tool-badge">JavaScript</div>
+            <div class="tool-badge">Java</div>
+            <div class="tool-badge">React</div>
+            <div class="tool-badge">Next.js</div>
+            <div class="tool-badge">OpenAI</div>
+            <div class="tool-badge">Claude AI</div>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <span class="section-tag"><span class="pt-only">Sobre mim</span><span class="en-only">About me</span></span>
+          <h2>
+            <span class="pt-only">Design que <span class="gradient-text">vende</span>, criado com cuidado</span>
+            <span class="en-only">Design that <span class="gradient-text">sells</span>, made with care</span>
+          </h2>
+          <p>
+            <span class="pt-only">Me chamo Murillo Bueno, criador da BRDev Studio — desenvolvedor full-stack e designer focado em transformar negócios pequenos e médios em marcas que se destacam no digital.</span>
+            <span class="en-only">My name is Murillo Bueno, founder of BRDev Studio — a full-stack developer and designer focused on turning small and medium businesses into brands that stand out online.</span>
+          </p>
+          <p>
+            <span class="pt-only">Trabalho com criação de lojas NuvemShop completas, identidade visual, conteúdo para redes sociais, edição de vídeos em qualquer formato e imagens geradas com IA tratadas no Photoshop. Também desenvolvo sites e landing pages com React, Next.js e tecnologias web modernas.</span>
+            <span class="en-only">I work with full NuvemShop store creation, visual identity, social media content, video editing in any format and AI-generated images treated in Photoshop. I also build websites and landing pages with React, Next.js and modern web technologies.</span>
+          </p>
+          <p>
+            <span class="pt-only">Cada projeto recebe atenção individualizada — do briefing inicial à entrega final — com foco em resultado real e comunicação clara em todas as etapas.</span>
+            <span class="en-only">Each project receives individual attention — from the initial brief to the final delivery — with a focus on real results and clear communication at every stage.</span>
+          </p>
+          <div class="about__highlights">
+            <div class="highlight">
+              <span class="highlight__icon">⚡</span>
+              <div>
+                <strong><span class="pt-only">Entrega rápida</span><span class="en-only">Fast delivery</span></strong>
+                <p><span class="pt-only">Prazos cumpridos, sempre</span><span class="en-only">Deadlines always met</span></p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight__icon">💎</span>
+              <div>
+                <strong><span class="pt-only">Qualidade premium</span><span class="en-only">Premium quality</span></strong>
+                <p><span class="pt-only">Resultado profissional</span><span class="en-only">Professional result</span></p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight__icon">🤝</span>
+              <div>
+                <strong><span class="pt-only">Suporte incluso</span><span class="en-only">Support included</span></strong>
+                <p><span class="pt-only">Atendimento pós-entrega</span><span class="en-only">Post-delivery support</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__info reveal">
+          <span class="section-tag"><span class="pt-only">Contato</span><span class="en-only">Contact</span></span>
+          <h2>
+            <span class="pt-only">Vamos criar algo <span class="gradient-text">incrível</span> juntos?</span>
+            <span class="en-only">Let's create something <span class="gradient-text">amazing</span> together?</span>
+          </h2>
+          <p>
+            <span class="pt-only">Me chame no WhatsApp ou preencha o formulário. Respondo em até 24 horas com um orçamento sem compromisso.</span>
+            <span class="en-only">Message me on WhatsApp or fill out the form. I'll reply within 24 hours with a no-commitment quote.</span>
+          </p>
+          <div class="contact__channels">
+            <a href="https://wa.me/5519993598381" class="contact-channel" target="_blank" rel="noopener">
+              <span class="contact-channel__icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <span><span class="pt-only">Resposta mais rápida</span><span class="en-only">Fastest response</span></span>
+              </div>
+              <span class="contact-channel__arrow">→</span>
+            </a>
+            <a href="mailto:murillobueno77@gmail.com" class="contact-channel">
+              <span class="contact-channel__icon">📧</span>
+              <div>
+                <strong>E-mail</strong>
+                <span>murillobueno77@gmail.com</span>
+              </div>
+              <span class="contact-channel__arrow">→</span>
+            </a>
+            <a href="https://instagram.com/brdevstudio" class="contact-channel" target="_blank" rel="noopener">
+              <span class="contact-channel__icon">📸</span>
+              <div>
+                <strong>Instagram</strong>
+                <span>@brdevstudio</span>
+              </div>
+              <span class="contact-channel__arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact__form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name"><span class="pt-only">Seu nome</span><span class="en-only">Your name</span></label>
+            <input type="text" id="name" name="name" class="pt-placeholder" data-pt="João Silva" data-en="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" class="pt-placeholder" data-pt="(11) 99999-9999" data-en="+1 555 123 4567" required />
+          </div>
+          <div class="form-group">
+            <label for="service"><span class="pt-only">Serviço de interesse</span><span class="en-only">Service of interest</span></label>
+            <select id="service" name="service">
+              <option value=""         data-pt="Selecione..."               data-en="Select...">Selecione...</option>
+              <option value="nuvemshop" data-pt="Loja NuvemShop"            data-en="NuvemShop Store">Loja NuvemShop</option>
+              <option value="site"      data-pt="Site / Landing Page"        data-en="Website / Landing Page">Site / Landing Page</option>
+              <option value="logo"      data-pt="Identidade Visual / Logo"   data-en="Visual Identity / Logo">Identidade Visual / Logo</option>
+              <option value="banner"    data-pt="Banners & Redes Sociais"    data-en="Banners & Social Media">Banners & Redes Sociais</option>
+              <option value="video"     data-pt="Edição de Vídeo"            data-en="Video Editing">Edição de Vídeo</option>
+              <option value="ia"        data-pt="Imagens com IA + Photoshop" data-en="AI + Photoshop Images">Imagens com IA + Photoshop</option>
+              <option value="pacote"    data-pt="Pacote combinado"           data-en="Combined package">Pacote combinado</option>
+              <option value="outro"     data-pt="Outro"                      data-en="Other">Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message"><span class="pt-only">Conte um pouco sobre seu projeto</span><span class="en-only">Tell me about your project</span></label>
+            <textarea id="message" name="message" rows="4" class="pt-placeholder"
+              data-pt="Ex: Quero criar uma loja de roupas femininas na NuvemShop com layout moderno..."
+              data-en="Ex: I want to create a women's clothing store on NuvemShop with a modern layout..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span class="btn__text"><span class="pt-only">Enviar mensagem</span><span class="en-only">Send message</span></span>
+            <span class="btn__loading" style="display:none"><span class="pt-only">Enviando...</span><span class="en-only">Sending...</span></span>
+          </button>
+          <p class="form-note">
+            <span class="pt-only">* Responderei em até 24 horas com um orçamento personalizado.</span>
+            <span class="en-only">* I'll reply within 24 hours with a personalized quote.</span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo">
+            <span class="logo-br">BR</span><span class="logo-dev">Dev</span><span class="logo-studio">Studio</span>
+          </a>
+          <p>
+            <span class="pt-only">Design digital para quem quer crescer online. NuvemShop, vídeo, logo e muito mais.</span>
+            <span class="en-only">Digital design for those who want to grow online. NuvemShop, video, logo and much more.</span>
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4><span class="pt-only">Serviços</span><span class="en-only">Services</span></h4>
+          <a href="#services"><span class="pt-only">Loja NuvemShop</span><span class="en-only">NuvemShop Store</span></a>
+          <a href="#services"><span class="pt-only">Sites & Landing Pages</span><span class="en-only">Websites & Landing Pages</span></a>
+          <a href="#services"><span class="pt-only">Identidade Visual</span><span class="en-only">Visual Identity</span></a>
+          <a href="#services"><span class="pt-only">Edição de Vídeo</span><span class="en-only">Video Editing</span></a>
+          <a href="#services">IA + Photoshop</a>
+        </div>
+        <div class="footer__links">
+          <h4>Links</h4>
+          <a href="#portfolio"><span class="pt-only">Portfólio</span><span class="en-only">Portfolio</span></a>
+          <a href="#videos"><span class="pt-only">Vídeos</span><span class="en-only">Videos</span></a>
+          <a href="#about"><span class="pt-only">Sobre</span><span class="en-only">About</span></a>
+          <a href="https://github.com/brdesenvolvimentos" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://wa.me/5519993598381" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 BRDev Studio · brdesenvolvimentos. <span class="pt-only">Todos os direitos reservados.</span><span class="en-only">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
