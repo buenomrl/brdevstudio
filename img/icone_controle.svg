@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 90">
+  <!-- corpo do controle -->
+  <path fill="white" d="
+    M 32 22
+    C 10 22 5 52 5 63
+    C 5 76 16 84 29 77
+    C 37 72 43 60 57 54
+    C 63 52 77 52 83 54
+    C 97 60 103 72 111 77
+    C 124 84 135 76 135 63
+    C 135 52 130 22 108 22
+    Z
+  "/>
+  <!-- direcional vertical -->
+  <rect fill="#0d0820" x="31" y="37" width="7" height="22" rx="2"/>
+  <!-- direcional horizontal -->
+  <rect fill="#0d0820" x="23" y="45" width="23" height="7" rx="2"/>
+  <!-- botão cima -->
+  <circle fill="#0d0820" cx="96" cy="38" r="5.5"/>
+  <!-- botão direita -->
+  <circle fill="#0d0820" cx="108" cy="48" r="5.5"/>
+  <!-- botão baixo -->
+  <circle fill="#0d0820" cx="96" cy="58" r="5.5"/>
+  <!-- botão esquerda -->
+  <circle fill="#0d0820" cx="84" cy="48" r="5.5"/>
+  <!-- select -->
+  <rect fill="#0d0820" x="57" y="36" width="10" height="5" rx="2.5"/>
+  <!-- start -->
+  <rect fill="#0d0820" x="73" y="36" width="10" height="5" rx="2.5"/>
+</svg>

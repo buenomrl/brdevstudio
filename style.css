@@ -363,10 +363,15 @@ body.dark .live-badge { color: #34d399; background: rgba(16,185,129,0.12); }
 
 .video-cover__logo {
   width: 55%; max-width: 220px;
-  filter: brightness(0) invert(1);
   opacity: 0.9;
   pointer-events: none;
   user-select: none;
+}
+
+/* logo da marca precisa ser invertido pra ficar branco */
+.video-cover__logo[src*="logo_e_nome"] {
+  filter: brightness(0) invert(1);
+  max-width: 260px;
 }
 
 .video-cover__play {
