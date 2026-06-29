@@ -116,6 +116,19 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => revealObserver.observe(el));
 
+// ── Video covers — click to load iframe ──
+document.querySelectorAll('.video-cover').forEach(cover => {
+  cover.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = cover.dataset.src + '?autoplay=1&rel=0';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    Object.assign(iframe.style, { position:'absolute', top:'0', left:'0', width:'100%', height:'100%', border:'0' });
+    cover.parentElement.appendChild(iframe);
+    cover.remove();
+  });
+});
+
 // ── Portfolio filter ──
 const filterBtns = document.querySelectorAll('.filter-btn');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
