@@ -337,6 +337,9 @@ body.dark .portfolio-logo-box--bueno { background: linear-gradient(135deg, #3b0a
 .portfolio-logo-box--brd { background: linear-gradient(135deg, #ede9fe, #ddd6fe); }
 body.dark .portfolio-logo-box--brd { background: linear-gradient(135deg, #2e1065, #1e0a46); }
 body.dark .portfolio-logo-box--brd .portfolio-logo-img { filter: brightness(0) invert(1); }
+/* Banner — fundo bege/creme quente */
+.portfolio-logo-box--banner { background: linear-gradient(135deg, #fdf6ec, #f5e6d0); }
+body.dark .portfolio-logo-box--banner { background: linear-gradient(135deg, #2e1f0a, #1a1005); }
 /* Social — fundo pink/magenta */
 .portfolio-logo-box--social { background: linear-gradient(135deg, #fce7f3, #fdf2f8); flex-direction: column; gap: 0.5rem; }
 body.dark .portfolio-logo-box--social { background: linear-gradient(135deg, #4a0d2e, #2d0a1e); }
