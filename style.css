@@ -240,7 +240,7 @@ body.dark .grid-overlay {
   transition: all var(--transition); position: relative; overflow: hidden;
   box-shadow: var(--shadow);
 }
-.service-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(124,58,237,0.05), transparent); opacity: 0; transition: opacity var(--transition); }
+.service-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(124,58,237,0.05), transparent); opacity: 0; transition: opacity var(--transition); pointer-events: none; }
 .service-card:hover { border-color: rgba(124,58,237,0.45); transform: translateY(-4px); box-shadow: var(--card-hover-shadow); }
 .service-card:hover::before { opacity: 1; }
 
