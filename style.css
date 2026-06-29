@@ -340,6 +340,7 @@ body.dark .portfolio-logo-box--brd .portfolio-logo-img { filter: brightness(0) i
 /* Banner — fundo bege/creme quente */
 .portfolio-logo-box--banner { background: linear-gradient(135deg, #fdf6ec, #f5e6d0); }
 body.dark .portfolio-logo-box--banner { background: linear-gradient(135deg, #2e1f0a, #1a1005); }
+.portfolio-logo-box--banner .portfolio-logo-img { max-width: 90%; max-height: 95%; }
 /* Social — fundo pink/magenta */
 .portfolio-logo-box--social { background: linear-gradient(135deg, #fce7f3, #fdf2f8); flex-direction: column; gap: 0.5rem; }
 body.dark .portfolio-logo-box--social { background: linear-gradient(135deg, #4a0d2e, #2d0a1e); }
